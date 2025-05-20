@@ -29,7 +29,7 @@ const Home = () => {
                             fontSize: '1.2rem',
                             transition: 'background-color 0.3s'
                         }}>
-                            Atividade 01 - Relógio Digital
+                            Atividade 01 - Relógio Digital / Letreiro
                         </Link>
                     </li>
                     <li>
@@ -43,7 +43,7 @@ const Home = () => {
                             fontSize: '1.2rem',
                             transition: 'background-color 0.3s'
                         }}>
-                            Atividade 02
+                            Atividade 02 - Contador de Pessoas
                         </Link>
                     </li>
                     <li>
