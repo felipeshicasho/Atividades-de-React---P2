@@ -1,6 +1,6 @@
 import Gallery, { Profile, Avatar, PeopleList, ChemistsList, PackingList, Item, FragmentExample } from '../components/Gallery';
 
-export default function Atividade03() {
+export default function Aula10() {
   return (
     <div style={{ padding: 24 }}>
       <h1>Atividade 03 - Exemplos de Componentes React</h1>

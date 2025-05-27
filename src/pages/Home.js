@@ -57,7 +57,7 @@ const Home = () => {
                             fontSize: '1.2rem',
                             transition: 'background-color 0.3s'
                         }}>
-                            Atividade 03
+                            Atividade 03 - Exemplos de Componentes React
                         </Link>
                     </li>
                 </ul>
