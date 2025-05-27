@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import Relogio from './pages/Atividade01';
 import Atividade02 from './pages/Atividade02';
+import Gallery from './pages/Atividade03';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/atividade01" element={<Relogio />} />
           <Route path="/atividade02" element={<Atividade02 />} />
+          <Route path="/atividade03" element={<Gallery />} />
         </Routes>
       </div>
     </Router>
