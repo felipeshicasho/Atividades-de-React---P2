@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { sculptureList } from './data';
 
 // 1.1.2 Definindo um componente
 function Profile() {
@@ -123,24 +124,44 @@ function FragmentExample() {
   );
 }
 
-// 1.1.3 Usando um componente
-export default function Gallery() {
+function Gallery() {
+  const [index, setIndex] = useState(0);
+  const [showMore, setShowMore] = useState(false);
+
+  function handleNextClick() {
+    setIndex((index + 1) % sculptureList.length);
+  }
+
+  function handleMoreClick() {
+    setShowMore(!showMore);
+  }
+
+  let sculpture = sculptureList[index];
+
   return (
     <section>
-      <h1>Amazing scientists</h1>
-      <Profile />
-      <Profile />
-      <Profile />
-      <Profile />
-      <h2>People List</h2>
-      <PeopleList />
-      <h2>Chemists Only</h2>
-      <ChemistsList />
-      <PackingList />
-      <FragmentExample />
+      <button onClick={handleNextClick}>
+        Next
+      </button>
+      <h2>
+        <i>{sculpture.name} </i>
+        by {sculpture.artist}
+      </h2>
+      <h3>
+        ({index + 1} of {sculptureList.length})
+      </h3>
+      <button onClick={handleMoreClick}>
+        {showMore ? 'Hide' : 'Show'} details
+      </button>
+      {showMore && <p>{sculpture.description}</p>}
+      <img
+        src={sculpture.url}
+        alt={sculpture.alt}
+      />
     </section>
   );
 }
 
 // Exportação nomeada
 export { Profile, Avatar, PeopleList, ChemistsList, PackingList, Item, FragmentExample };
+export default Gallery;
