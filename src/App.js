@@ -4,6 +4,7 @@ import Relogio from './pages/Atividade01';
 import Atividade02 from './pages/Atividade02';
 import Gallery from './pages/Atividade03';
 import Atividade04 from './pages/Atividade04';
+import Atividade05 from './pages/Atividade05';
 import './App.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/atividade02" element={<Atividade02 />} />
           <Route path="/atividade03" element={<Gallery />} />
           <Route path="/atividade04" element={<Atividade04 />} />
+          <Route path="/atividade05" element={<Atividade05 />} />
         </Routes>
       </div>
     </Router>

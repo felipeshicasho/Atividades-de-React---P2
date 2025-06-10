@@ -12,36 +12,12 @@ import CounterList from '../components/CounterList';
 import List3 from '../components/List3';
 import List4 from '../components/List4';
 import BucketList from '../components/BucketList';
-import FormQuiz from '../components/FormQuiz';
-import FormTicket from '../components/FormTicket';
-import Accordion from '../components/Accordion';
-import Messenger from '../components/Messenger';
 
 function Atividade04() {
   return (
     <div style={{ padding: '20px' }}>
       <h1>Atividade 04 - Gerenciamento de Estado React</h1>
       
-      <section>
-        <h2>FormQuiz Component</h2>
-        <FormQuiz />
-      </section>
-
-      <section>
-        <h2>FormTicket Component</h2>
-        <FormTicket />
-      </section>
-
-      <section>
-        <h2>Accordion Component</h2>
-        <Accordion />
-      </section>
-
-      <section>
-        <h2>Messenger Component</h2>
-        <Messenger />
-      </section>
-
       <section>
         <h2>Toolbar Component</h2>
         <Toolbar />

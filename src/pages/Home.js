@@ -57,7 +57,7 @@ const Home = () => {
                             fontSize: '1.2rem',
                             transition: 'background-color 0.3s'
                         }}>
-                            Atividade 03 - Exemplos de Componentes React
+                            Atividade 03 - Galeria de Arte
                         </Link>
                     </li>
                     <li>
@@ -72,6 +72,20 @@ const Home = () => {
                             transition: 'background-color 0.3s'
                         }}>
                             Atividade 04 - Gerenciamento de Estado React
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/atividade05" style={{
+                            display: 'block',
+                            padding: '15px',
+                            backgroundColor: '#f8f9fa',
+                            borderRadius: '8px',
+                            textDecoration: 'none',
+                            color: '#333',
+                            fontSize: '1.2rem',
+                            transition: 'background-color 0.3s'
+                        }}>
+                            Atividade 05 - Formulários e Interatividade
                         </Link>
                     </li>
                 </ul>
